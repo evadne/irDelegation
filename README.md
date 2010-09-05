@@ -13,19 +13,16 @@ Easy delegation / bare-bones protocol support for Cappuccino.
 
 	+ (IRProtocol) irDelegateProtocol;
 	
-	- (BOOL) irConformsToProtocol:(IRProtocol);
+	- (BOOL) irConformsToProtocol:(IRProtocol)inProtocol;
 	- (void) irSetDelegate:(id)inObject;
-
-
-###	`IRProtocolSelector.j`
-
-	+ (IRProtocolSelector) protocolMethodWithSelector:(SEL)aSelector;
-	+ (IRProtocolSelector) protocolMethodWithSelector:(SEL)aSelector optional:(BOOL)optional;
 
 
 ###	`IRProtocol.j`
 
 	+ (IRProtocol) protocolWithSelectors:(IRProtocolSelector)aSelector, ...;
+	+ (IRProtocol) protocolWithSelectorsAndFlags:(IRProtocolSelector)aSelector, (BOOL)isOptional, ...;
+	
+	- (BOOL) implementedByObject:(id)inObject;
 
 
 
