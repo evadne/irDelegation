@@ -51,3 +51,11 @@ where the returned protocol will be used by `IRDelegation`.  `@import` the main 
 
 
 
+
+#	TODO
+
+Implement delegate proxy, so optional selectors work well.
+
+
+
+

@@ -9,3 +9,5 @@
 	
 @import "CPObject+IRDelegation.j"
 @import "IRProtocol.j"
+@import "IRDelegateProxy.j"
+
